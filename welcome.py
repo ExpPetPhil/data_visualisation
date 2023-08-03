@@ -21,6 +21,14 @@ df = pd.read_csv('Bastar Craton.csv')
 st.dataframe(df)
 
 
+el_list= df.columns.tolist()[27:80]
+x_axis = st.selectbox('select elements_x', el_list)
+y_axis = st.selectbox('select elements_y', el_list)
+
+
+st.multiselect('select location', file_name_list, file_name_list[0])
+
+
 x = df['Mg']
 y = df['Si']
 
@@ -32,19 +40,6 @@ p = figure(
 p.circle(x, y, legend_label='Trend', line_width=2)
 
 st.bokeh_chart(p, use_container_width=True)
-
-
-
-
-el_list= df.columns.tolist()[27:80]
-x_axis = st.selectbox('select elements', el_list)
-y_axis = st.selectbox('select elements', el_list)
-
-
-st.multiselect('select location', file_name_list, file_name_list[0])
-
-
-
 
 
 
