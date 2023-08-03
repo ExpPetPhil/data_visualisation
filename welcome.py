@@ -26,11 +26,11 @@ df = pd.read_csv(select_file)
 
 el_list= df.columns.tolist()[27:80]
 
-x_axis = st.selectbox('elements_x', df.columns.tolist()[27:80])
-y_axis = st.selectbox('elements_y', df.columns.tolist()[27:80])
+#x_axis = st.selectbox('elements_x', df.columns.tolist()[27:80])
+#y_axis = st.selectbox('elements_y', df.columns.tolist()[27:80])
 
-#x_axis = st.selectbox('elements_x', el_list)
-#y_axis = st.selectbox('elements_y', el_list)
+x_axis = st.selectbox('elements_x', el_list)
+y_axis = st.selectbox('elements_y', el_list)
 
 #location = st.multiselect('select location', file_name_list, file_name_list[0])
 
