@@ -18,7 +18,7 @@ for i in os.listdir():
 st.write(file_name_list)
 
 df = pd.read_csv('Bastar Craton.csv')
-#st.dataframe(df)
+st.dataframe(df)
 
 
 el_list= df.columns.tolist()[27:80]
