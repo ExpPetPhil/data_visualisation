@@ -44,7 +44,7 @@ p = figure(
     x_axis_label='x',
     y_axis_label='y')
 
-p.circle(x, y, legend_label='Trend', line_width=2)
+p.circle(x_axis, y_axis, legend_label='Trend', line_width=2)
 
 p.line([0, 20],[5, 5])
 
