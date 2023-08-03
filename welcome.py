@@ -20,9 +20,11 @@ st.write(file_name_list)
 df = pd.read_csv('Bastar Craton.csv')
 st.dataframe(df)
 
-#df1 =pd.read_csv(file_name_list)
+#df1 = pd.read_csv(file_name_list)
+df1 = st.dataframe(file_name_list)
 
 el_list= df.columns.tolist()[27:80]
+
 x_axis = st.selectbox('select elements_x', el_list)
 y_axis = st.selectbox('select elements_y', el_list)
 
