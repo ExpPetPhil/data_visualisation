@@ -35,9 +35,10 @@ y_axis = st.selectbox('select elements_y', el_list)
 
 
 
-x = df['Mg']/10000
-y = df['Si']/10000
-
+#x = df['Mg']/10000
+#y = df['Si']/10000
+x = el_list
+y = el_list
 
 p = figure(
     title='simple line example',
