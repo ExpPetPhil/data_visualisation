@@ -26,7 +26,6 @@ x_axis = st.selectbox('select elements_x', el_list)
 y_axis = st.selectbox('select elements_y', el_list)
 
 location = st.selectbox('select location', file_name_list, file_name_list[0])
-#df = pd.read_csv(location)
 
 x = df['Mg']
 y = df['Si']
