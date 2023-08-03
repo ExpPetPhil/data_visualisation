@@ -29,6 +29,9 @@ el_list= df.columns.tolist()[27:80]
 x_axis = st.selectbox('elements_x', df.columns.tolist()[27:80])
 y_axis = st.selectbox('elements_y', df.columns.tolist()[27:80])
 
+#x_axis = st.selectbox('elements_x', el_list)
+#y_axis = st.selectbox('elements_y', el_list)
+
 #location = st.multiselect('select location', file_name_list, file_name_list[0])
 
 #location = st.selectbox('select location', file_name_list)
@@ -45,7 +48,7 @@ p = figure(
     x_axis_label='x',
     y_axis_label='y')
 
-p.circle(x, y, legend_label='Trend', line_width=2)
+p.circle(df[x], df[y], legend_label='Trend', line_width=2)
 
 #p.line([0, 20],[5, 5])
 
