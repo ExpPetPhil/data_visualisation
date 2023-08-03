@@ -26,7 +26,7 @@ x_axis = st.selectbox('select elements_x', el_list)
 y_axis = st.selectbox('select elements_y', el_list)
 
 location = st.selectbox('select location', file_name_list, file_name_list[0])
-df = pd.read_csv(location)
+#df = pd.read_csv(location)
 
 x = df['Mg']
 y = df['Si']
@@ -37,7 +37,7 @@ p = figure(
     x_axis_label='x',
     y_axis_label='y')
 
-p.circle(x_axis, y_axis, legend_label='Trend', line_width=2)
+p.circle(x, y, legend_label='Trend', line_width=2)
 
 st.bokeh_chart(p, use_container_width=True)
 
