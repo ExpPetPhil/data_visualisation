@@ -34,8 +34,8 @@ location = st.selectbox('select location', file_name_list)
 
 
 
-x = df['Mg']
-y = df['Si']
+x = df['Mg']/10000
+y = df['Si']/10000
 
 
 p = figure(
@@ -44,6 +44,8 @@ p = figure(
     y_axis_label='y')
 
 p.circle(x, y, legend_label='Trend', line_width=2)
+
+p.line([0, 20],[5, 5])
 
 st.bokeh_chart(p, use_container_width=True)
 
