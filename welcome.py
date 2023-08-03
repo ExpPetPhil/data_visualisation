@@ -26,8 +26,8 @@ df = pd.read_csv(select_file)
 
 el_list= df.columns.tolist()[27:80]
 
-x_axis = st.selectbox('select elements_x', el_list)
-y_axis = st.selectbox('select elements_y', el_list)
+x_axis = st.selectbox('elements_x', df.columns.tolist()[27:80])
+y_axis = st.selectbox('elements_y', df.columns.tolist()[27:80])
 
 #location = st.multiselect('select location', file_name_list, file_name_list[0])
 
@@ -47,7 +47,7 @@ p = figure(
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
-p.line([0, 20],[5, 5])
+#p.line([0, 20],[5, 5])
 
 st.bokeh_chart(p, use_container_width=True)
 
