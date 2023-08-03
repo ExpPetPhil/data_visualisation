@@ -19,5 +19,5 @@ st.dataframe(df)
 el_list= df.columns.tolist()[27:80]
 x_axis = st.selectbox('select elements', el_list)
 
-st.multiselect('select location', file_name_list)
+st.multiselect('select location', file_name_list, file_name_list[0])
 
