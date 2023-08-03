@@ -31,7 +31,7 @@ y_axis = st.selectbox('select elements_y', el_list)
 
 #location = st.multiselect('select location', file_name_list, file_name_list[0])
 
-location = st.selectbox('select location', file_name_list)
+#location = st.selectbox('select location', file_name_list)
 
 
 
