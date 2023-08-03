@@ -21,7 +21,7 @@ st.write(file_name_list)
 #st.dataframe(df)
 
 #df1 = pd.read_csv(file_name_list)
-select_file = st.dataframe(file_name_list)
+select_file = st.selectbox(file_name_list)
 df = pd.read_csv(select_file)
 
 el_list= df.columns.tolist()[27:80]
